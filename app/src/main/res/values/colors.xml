@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#027d96</color>-->
+    <color name="colorPrimary">#0199b7</color>
+    <color name="colorPrimaryDark">#014a59</color>
+    <color name="colorPrimaryMuda">#0199b7</color>
+    <color name="colorAccent">#093d48</color>
+    <color name="colorTransparan">#f2f2f2</color>
+    <color name="Transparan">@android:color/transparent</color>
+    <color name="colorGrey">#afafaf</color>
+    <color name="chatKanan">#e4fdca</color>
+    <color name="putih">#fff</color>
+    <color name="textView">#17afafaf</color>
+
+    <color name="checkbox">#cf000000</color>
+
+
+    <color name="backgroundColorPrimary">#fe50b4c9</color>
+
+    <color name="boomDUa">#953a9c66</color>
+    <color name="boomEmpat">#9370DB</color>
+    <color name="boomSatu">#00699c</color>
+    <color name="boomTiga">#CD5C5C</color>
+    <color name="boomLima">#CD853F</color>
+    <color name="abu">#f7dad8d8</color>
+    <color name="orange">#e43605</color>
+    <color name="bayar">#3ba351</color>
+</resources>

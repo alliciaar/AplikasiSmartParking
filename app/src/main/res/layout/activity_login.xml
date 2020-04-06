@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#89000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/satu">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/kuotes"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parkir Online"
+                android:textColor="@color/putih"
+                android:layout_centerVertical="true"
+                android:textSize="35sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textFontWeight="2"
+            android:textColor="#e5ffffff"
+            android:id="@+id/kuotes"
+            android:text="Parkir aman dan nyaman"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/deskripsi"
+            android:layout_below="@+id/kuotes"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#bdffffff"
+            android:textSize="14sp"
+            android:text="Parkir online menawarkan kemudahan dalam memakirkan kendara dengan cara memesan online tempar parkir yang di inginkan. Dengan adanya parkir online ini maka akan memudahkan driver saat melakukan perjalanan."/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dua"
+        android:layout_marginBottom="20sp"
+        android:elevation="8dp"
+        app:cardCornerRadius="3dp"
+        app:cardBackgroundColor="@color/boomTiga"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/satu">
+
+        <RelativeLayout
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_margin="6dp">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:src="@mipmap/email"
+                android:layout_marginLeft="8sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:textFontWeight="2"
+                android:layout_centerInParent="true"
+                android:text="Email"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tiga"
+        android:elevation="8dp"
+        app:cardCornerRadius="3dp"
+        app:cardBackgroundColor="@color/bayar"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dua">
+
+        <RelativeLayout
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_margin="6dp">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:src="@mipmap/phone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:textFontWeight="2"
+                android:layout_centerInParent="true"
+                android:text="Phone"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bantuan"
+        android:layout_marginBottom="70dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="3dp"
+        app:cardBackgroundColor="@color/putih"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tiga">
+
+        <RelativeLayout
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_margin="6dp">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:src="@mipmap/google"
+                android:layout_marginLeft="8sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:textColor="#3e3a3a"
+                android:textSize="18sp"
+                android:textFontWeight="2"
+                android:layout_centerInParent="true"
+                android:text="Google"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bantuan"
+        android:layout_marginBottom="30dp"
+        android:textSize="12sp"
+        android:textColor="@color/putih"
+        android:text="BUTUH BANTUAN | help@onlinepark.com"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bnve">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparan">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="55sp"
+                    android:id="@+id/toolbar"
+                    android:background="@color/colorPrimary"
+                    android:theme="@style/AppNavigation"
+                    android:layout_alignParentTop="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55sp"
+                        android:background="@color/Transparan">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/putih"
+                            android:textSize="24sp"
+                            android:textFontWeight="3"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/Transparan"
+                            android:text="FishShop"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/text_toolbar"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/inti">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_place"/>
+
+        </RelativeLayout>
+
+        <!-- app:layout_behavior="com.karya.karyadidk.ayobelajar.Class.ScrollFABBehavior" -->
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/putih"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

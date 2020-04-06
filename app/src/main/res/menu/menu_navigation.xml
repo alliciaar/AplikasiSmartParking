@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/i_home"
+        android:checked="true"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/i_pesanan"
+        android:icon="@drawable/pesanan"
+        android:title="Pesanan" />
+
+    <!--<item-->
+    <!--android:id="@+id/i_notifikasi"-->
+    <!--android:icon="@drawable/notifikasi"-->
+    <!--android:title="Notifikasi" />-->
+
+</menu>
