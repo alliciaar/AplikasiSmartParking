@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class Login extends AppCompatActivity {
+public class Registrasi extends AppCompatActivity {
 
     private final int REQUEST_LOGIN = 1000;
 
@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if (FirebaseAuth.getInstance().getCurrentUser() != null){
-            Intent intent = new Intent(Login.this, Home.class);
+            Intent intent = new Intent(Registrasi.this, Home.class);
             startActivity(intent);
             finish();
         } else {
@@ -47,7 +47,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_registrasi);
 
         session = new Session(this);
 
@@ -120,7 +120,7 @@ public class Login extends AppCompatActivity {
                             .child(user.getUid()).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-                            startActivity(new Intent(Login.this, Home.class));
+                            startActivity(new Intent(Registrasi.this, Home.class));
                             finish();
                             return;
                         }
@@ -147,7 +147,7 @@ public class Login extends AppCompatActivity {
                 // Sign in failed. If response is null the user canceled the
                 // sign-in flow using the back button. Otherwise check
                 // response.getError().getErrorCode() and handle the error.
-                //Toast.makeText(Login.this, "Gagal ", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Registrasi.this, "Gagal ", Toast.LENGTH_SHORT).show();
             }
         }
     }

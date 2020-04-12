@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Registrasi">
 
     <ImageView
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
             android:layout_marginRight="50dp"
             android:textColor="#bdffffff"
             android:textSize="14sp"
-            android:text="Parkir online menawarkan kemudahan dalam memakirkan kendara dengan cara memesan online tempar parkir yang di inginkan. Dengan adanya parkir online ini maka akan memudahkan driver saat melakukan perjalanan."/>
+            android:text="Parkir online menawarkan kemudahan dalam memakirkan kendaraan dengan cara memesan online tempar parkir yang di inginkan. Dengan adanya parkir online ini maka akan memudahkan driver saat melakukan perjalanan."/>
 
     </RelativeLayout>
 

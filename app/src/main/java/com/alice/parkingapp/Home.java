@@ -106,7 +106,7 @@ public class Home extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
 
-        text_toolbar.setText("Parkir Online");
+        text_toolbar.setText("Smart Park");
 
 
         setupBottomNavigationView();

@@ -53,7 +53,6 @@ public class Lokasi extends AppCompatActivity {
 
         session = new Session(this);
         map = session.getDetailLogin();
-
         intent = getIntent();
         lattitude = intent.getStringExtra("lattitude");
         longitude = intent.getStringExtra("longitude");
@@ -73,7 +72,7 @@ public class Lokasi extends AppCompatActivity {
         distanceDouble = (double)(Math.round(distanceFloat*100)) / 100;
 
         if (distanceDouble > 1.0){
-            Toast.makeText(Lokasi.this, "Lokasi anda terlalu jauh, minimal 1 Km", Toast.LENGTH_LONG).show();
+            Toast.makeText(Lokasi.this, "Lokasi anda terlalu jauh, minimal 7m", Toast.LENGTH_LONG).show();
             finish();
         } else {
             AlertDialog alertDialog = new AlertDialog.Builder(Lokasi.this).create();
